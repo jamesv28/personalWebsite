@@ -1,17 +1,19 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic);
-@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+/*@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 html, body {
     font-family: 'Merriweather', serif;
     color: #303030;
     /*color: #686868;*/
 }
 h1 {
-    font-family: 'Abril Fatface', cursive;
+    /*font-family: 'Abril Fatface', cursive;*/
+    font-family: 'Montserrat Alternates', sans-serif;
     text-shadow: 0 1px rgba(0,0,0,0.7);
 }
 
 #indexHead {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/light.jpg");
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/1024px-Eagle_Nebula_from_ESO.jpg");
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -30,10 +32,10 @@ h1 {
 #indexHead h1 {
     font-size: 100px;
     color: white;
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
+    /*border-top: 5px solid white;*/
+    /*border-bottom: 5px solid white;*/
     text-shadow: -3px 1px rgba(0,0,0,0.5);
-    font-variant: small-caps;
+    /*font-variant: small-caps;*/
 }
 #headContent {
     position: absolute;
@@ -94,3 +96,25 @@ a .fa-arrow-circle-o-right {
     text-decoration: none;
     color: #b21b2c;
 }
+
+/*!****** trying to make a div a polygon *********!*/
+/*#base {*/
+    /*background: red;*/
+    /*display: block;*/
+    /*height: 55px;*/
+    /*!*margin-left: 20px;*!*/
+    /*!*margin-top: 55px;*!*/
+    /*position: relative;*/
+    /*!*width: 100px;*!*/
+/*}*/
+/*#base:before {*/
+    /*border-bottom: 35px solid red;*/
+    /*border-left: 50px solid transparent;*/
+    /*border-right: 50px solid transparent;*/
+    /*content: "";*/
+    /*height: 0;*/
+    /*left: 0;*/
+    /*position: absolute;*/
+    /*top: -35px;*/
+    /*width: 0;*/
+/*}*/
