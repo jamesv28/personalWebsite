@@ -10,11 +10,13 @@ $lightGray: lighten($gray, 10%);
 
 /******* General *******/
 html {
-  color: $gray;
+  //color: $gray;
   font-size:100%;
 
 }
-
+a:hover {
+  text-decoration: none;
+}
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -28,6 +30,8 @@ html, body {
 h2 {
   font-size: 2.4rem;
 }
+
+
 /******** header content *******/
 #indexHead {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/1024px-Eagle_Nebula_from_ESO.jpg");
@@ -50,31 +54,11 @@ h2 {
   color: $seashell;
   padding: 40px;
   border: 5px solid $seashell;
+  background: rgba(0,0,0,0.6);
+  margin-top:20%;
 }
 
 
-.second .wrapper {
-  display:block;
-  //float:left;
-  margin:50px auto 200px;
-  width:100%;
-  padding:0 5%;
-  transform:skew(0deg,-5deg);
-  -ms-transform:skew(0deg,-10deg);
-  -webkit-transform:skew(0deg,-5deg);
-}
-.second {
-  background: $purple;
-  z-index:1;
-  display:block;
-  //float:left;
-  margin-top:-100px;
-  width:100%;
-  background:white;
-  transform:skew(0deg,10deg);
-  -ms-transform:skew(0deg,10deg); /* IE 9 */
-  -webkit-transform:skew(0deg,5deg); /* Safari */
-}
 
 .section-content {
   margin-top: 60px;
@@ -85,4 +69,74 @@ h2 {
   }
 }
 
+/******** navigation ***********/
+nav {
+  //display: none;
+  position: fixed;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: right;
+  z-index: 3;
+}
+nav a {
+  display: block;
+  line-height: 25px;
+  position: relative;
+  padding-right: 20px;
+  color: purple;
+  text-decoration: none;
+}
+
+nav a:hover .nav-label {
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
+nav .nav-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  background-color: rgb(214, 214, 214);
+  //background-color: purple;
+  border-radius: 100%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+nav .nav-label {
+  display: block;
+  opacity: 0.5;
+  visibility: hidden;
+  -webkit-transform: translateX(-10px);
+  -ms-transform: translateX(-10px);
+  transform: translateX(-10px);
+  -webkit-transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+  transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
+}
+
+nav.is-dark a {
+  color: #212121;
+}
+nav.is-dark .nav-dot {
+  background-color: rgba(0, 0, 0, 0.5); }
+nav.is-light a {
+  color: #ffffff; }
+nav.is-light .nav-dot {
+  background-color: rgba(255, 255, 255, 0.5); }
+nav ul {
+  margin: 0;
+  padding: 0; }
+nav li {
+  width: auto;
+  list-style: none; }
 
