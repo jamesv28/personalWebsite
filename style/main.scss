@@ -6,6 +6,7 @@
 $purple: #B23AEE;
 $seashell: #FFF5EE;
 $gray: #333333;
+$lightGray: lighten($gray, 10%);
 
 /******* General *******/
 html {
@@ -24,6 +25,10 @@ html, body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
 
+h2 {
+  font-size: 2.4rem;
+}
+/******** header content *******/
 #indexHead {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Eagle_Nebula_from_ESO.jpg/1024px-Eagle_Nebula_from_ESO.jpg");
   background-size: cover;
@@ -69,6 +74,15 @@ html, body {
   transform:skew(0deg,10deg);
   -ms-transform:skew(0deg,10deg); /* IE 9 */
   -webkit-transform:skew(0deg,5deg); /* Safari */
+}
+
+.section-content {
+  margin-top: 60px;
+
+  p {
+    color: $lightGray;
+    font-size: 1.2rem;
+  }
 }
 
 
