@@ -1,5 +1,4 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic);
-/*@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 
 html {
@@ -122,3 +121,14 @@ a .fa-arrow-circle-o-right {
     /*top: -35px;*/
     /*width: 0;*/
 /*}*/
+
+/******** Working on new content *******/
+.section_heading {
+    padding: 40px;
+    color: darkblue;
+    text-align: center;
+    border: 5px solid black;
+    width: 500px;
+    margin: 0 auto;
+
+}
