@@ -1,6 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic);
 /*@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+
+html {
+    font-size: 100%;
+}
 html, body {
     font-family: 'Merriweather', serif;
     color: #303030;
@@ -27,7 +31,7 @@ h1 {
 }
 
 #about h1 {
-    font-size: 100px;
+    font-size: 4rem;
 }
 #indexHead h1 {
     font-size: 100px;
@@ -39,7 +43,7 @@ h1 {
 }
 #headContent {
     position: absolute;
-    top: 25%;
+    top: 10%;
 }
 .about {
     margin-top: 40px;
