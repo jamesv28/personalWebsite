@@ -3,17 +3,23 @@
 /****** montserrat alternate *******/
 @import url(https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 
-$purple: #B23AEE;
+$purple: #9932CC;
 $seashell: #FFF5EE;
 $gray: #333333;
 $lightGray: lighten($gray, 10%);
-
+$darkPurple: darken($purple, 30%);
+$grayPurple: #827CAB;
+$bigPadding: 40px;
 /******* General *******/
 html {
   //color: $gray;
   font-size:100%;
 
 }
+nav ul {
+  list-style-type: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -26,7 +32,9 @@ a:hover {
 html, body {
   font-family: 'Montserrat Alternates', sans-serif;
 }
-
+h1 {
+  font-size: 3.2rem;
+}
 h2 {
   font-size: 2.4rem;
 }
@@ -61,7 +69,7 @@ h2 {
 
 
 .section-content {
-  margin-top: 60px;
+  padding: $bigPadding 0 $bigPadding;
 
   p {
     color: $lightGray;
@@ -124,19 +132,26 @@ nav .nav-label {
   transition: all 0.2s cubic-bezier(.17, .67, .83, .67);
 }
 
-nav.is-dark a {
-  color: #212121;
+/******** process *********/
+.process {
+  padding: $bigPadding 0 $bigPadding;
+  background: $darkPurple;
+  color: $seashell;
+  i {
+    margin-top: 10px;
+  }
+  p {
+    font-size: 1.2rem;
+  }
+
 }
-nav.is-dark .nav-dot {
-  background-color: rgba(0, 0, 0, 0.5); }
-nav.is-light a {
-  color: #ffffff; }
-nav.is-light .nav-dot {
-  background-color: rgba(255, 255, 255, 0.5); }
-nav ul {
-  margin: 0;
-  padding: 0; }
-nav li {
-  width: auto;
-  list-style: none; }
+
+.howSection {
+  padding-bottom: 40px;
+}
+/******** icons *******/
+.fa-flask {
+  color: $seashell;
+}
+
 

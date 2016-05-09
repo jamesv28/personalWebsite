@@ -5,6 +5,9 @@
 html {
   font-size: 100%; }
 
+nav ul {
+  list-style-type: none; }
+
 a:hover {
   text-decoration: none; }
 
@@ -15,6 +18,9 @@ a:hover {
 
 html, body {
   font-family: 'Montserrat Alternates', sans-serif; }
+
+h1 {
+  font-size: 3.2rem; }
 
 h2 {
   font-size: 2.4rem; }
@@ -44,7 +50,7 @@ h2 {
   margin-top: 20%; }
 
 .section-content {
-  margin-top: 60px; }
+  padding: 40px 0 40px; }
   .section-content p {
     color: #4d4d4d;
     font-size: 1.2rem; }
@@ -100,24 +106,21 @@ nav .nav-label {
   -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
   transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
 
-nav.is-dark a {
-  color: #212121; }
+/******** process *********/
+.process {
+  padding: 40px 0 40px;
+  background: #3d1451;
+  color: #FFF5EE; }
+  .process i {
+    margin-top: 10px; }
+  .process p {
+    font-size: 1.2rem; }
 
-nav.is-dark .nav-dot {
-  background-color: rgba(0, 0, 0, 0.5); }
+.howSection {
+  padding-bottom: 40px; }
 
-nav.is-light a {
-  color: #ffffff; }
-
-nav.is-light .nav-dot {
-  background-color: rgba(255, 255, 255, 0.5); }
-
-nav ul {
-  margin: 0;
-  padding: 0; }
-
-nav li {
-  width: auto;
-  list-style: none; }
+/******** icons *******/
+.fa-flask {
+  color: #FFF5EE; }
 
 /*# sourceMappingURL=main.css.map */
