@@ -32,5 +32,7 @@ $(function() {
         showCursor: true,
         loop: true,
         backDelay: 1000
-    })
+    });
+
+    $('.owl-carousel').owlCarousel();
 }); // end of jQuery script
