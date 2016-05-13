@@ -34,5 +34,14 @@ $(function() {
         backDelay: 1000
     });
 
-    $('.owl-carousel').owlCarousel();
+    $('.owl-carousel').owlCarousel({
+        animateOut: 'bounceOutRight',
+        animateIn: 'bounceInLeft',
+        items:1,
+        margin:30,
+        stagePadding:30,
+        smartSpeed:450,
+        nav: true
+
+    });
 }); // end of jQuery script

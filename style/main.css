@@ -56,8 +56,9 @@ h2 {
   padding-top: 40px; }
 
 #indexHead p {
-  color: #FFF5EE;
-  font-size: 2.4rem; }
+  color: #9932CC;
+  font-size: 2.4rem;
+  text-shadow: 0.5px 0.5px #FFF5EE; }
 
 .section-content {
   padding: 40px 0 40px; }
@@ -146,6 +147,12 @@ nav .nav-label {
 .fa-flask {
   color: #FFF5EE; }
 
+.icons {
+  color: #9932CC; }
+
+ul li {
+  list-style-type: none; }
+
 /*********end of icons ******/
 /********typing *********/
 .typed-cursor {
@@ -175,5 +182,25 @@ nav .nav-label {
     opacity: 0; }
   100% {
     opacity: 1; } }
+/****** owl carousel ********/
+.owl-carousel h2 {
+  text-align: center; }
+
+/******* Contact ********/
+#contact {
+  color: #FFF5EE;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("http://www.insidesources.com/wp-content/uploads/2014/04/bigstock-Old-Mailboxes-in-west-United-S-41342812-1.jpg");
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat; }
+  #contact h2 {
+    padding-top: 40px; }
+  #contact p {
+    font-size: 1.4rem; }
 
 /*# sourceMappingURL=main.css.map */
