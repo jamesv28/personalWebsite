@@ -154,14 +154,18 @@ nav .nav-label {
 /******** process *********/
 .process {
   padding: $bigPadding 0 $bigPadding;
-  background: $darkCornflower;
+  background: linear-gradient(to bottom, rgba(66,66,111, 0.9), rgba(66,66,111, 0.9)), url("https://assets.entrepreneur.com/content/16x9/822/20141230193127-work.jpeg")$darkCornflower;
   color: $seashell;
-  i {
-    margin-top: 10px;
-  }
-  p {
-    font-size: 1.2rem;
-  }
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 400px;
+  background-attachment: fixed;
 
 }
 #beginP::first-letter {
