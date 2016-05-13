@@ -12,6 +12,8 @@ $reallyLightGray: lighten($gray, 30%);
 $darkPurple: darken($purple, 30%);
 $grayPurple: #827CAB;
 $bigPadding: 40px;
+$cornflower: #42426F;
+$darkCornflower: darken($cornflower, 10%);
 /******* General *******/
 html {
   //color: $gray;
@@ -152,7 +154,7 @@ nav .nav-label {
 /******** process *********/
 .process {
   padding: $bigPadding 0 $bigPadding;
-  background: $darkPurple;
+  background: $darkCornflower;
   color: $seashell;
   i {
     margin-top: 10px;
@@ -163,15 +165,22 @@ nav .nav-label {
 
 }
 #beginP::first-letter {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 .howSection {
   padding-bottom: 40px;
+}
+
+.second {
+  padding-bottom: 40px;
+
 }
 /******** icons *******/
 .fa-flask {
   color: $seashell;
 }
 
+
+/*********end of icons ******/
 
 

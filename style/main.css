@@ -120,7 +120,7 @@ nav .nav-label {
 /******** process *********/
 .process {
   padding: 40px 0 40px;
-  background: #3d1451;
+  background: #2f2f4f;
   color: #FFF5EE; }
   .process i {
     margin-top: 10px; }
@@ -128,13 +128,18 @@ nav .nav-label {
     font-size: 1.2rem; }
 
 #beginP::first-letter {
-  font-size: 1.6rem; }
+  font-size: 1.8rem; }
 
 .howSection {
+  padding-bottom: 40px; }
+
+.second {
   padding-bottom: 40px; }
 
 /******** icons *******/
 .fa-flask {
   color: #FFF5EE; }
+
+/*********end of icons ******/
 
 /*# sourceMappingURL=main.css.map */
