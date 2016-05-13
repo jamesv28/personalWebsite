@@ -45,7 +45,7 @@ h2 {
 
 /******** header content *******/
 #indexHead {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("../img/mountain.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url("http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/random-wallpapers-nature-mountain-river-wallpaper.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -58,6 +58,10 @@ h2 {
   position: relative;
   z-index: -1;
   padding:0;
+
+  h3 {
+    color: $lightGray;
+  }
 }
 
 #indexHead h1 {
@@ -105,9 +109,9 @@ nav a {
 }
 
 nav a:hover .nav-label {
-  -webkit-transform: translateX(0);
-  -ms-transform: translateX(0);
-  transform: translateX(0);
+  -webkit-transform: translateX(-20);
+  -ms-transform: translateX(-20);
+  transform: translateX(-20);
   opacity: 1;
   visibility: visible;
 }
@@ -128,6 +132,7 @@ nav .nav-dot {
   transition: all 0.3s linear;
 }
 nav .nav-label {
+  color: $darkPurple;
   display: block;
   opacity: 0.5;
   visibility: hidden;
@@ -151,7 +156,9 @@ nav .nav-label {
   }
 
 }
-
+.second {
+  background: $seashell;
+}
 .howSection {
   padding-bottom: 40px;
 }
@@ -159,5 +166,6 @@ nav .nav-label {
 .fa-flask {
   color: $seashell;
 }
+
 
 
