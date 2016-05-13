@@ -25,4 +25,12 @@ $(function() {
     }); //on click
 
 
+    //typing
+    $('.typing').typed({
+        strings: ['Developer','Designer', 'all around cool dude'],
+        typeSpeed: 10,
+        showCursor: true,
+        loop: true,
+        backDelay: 1000
+    })
 }); // end of jQuery script
