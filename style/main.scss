@@ -252,5 +252,12 @@ ul li {
     font-size: 1.4rem;
   }
 
+  .uList {
+    padding-left:0;
+  }
+}
 
+.btn-info, .btn-info:hover {
+  background: $purple;
+  border: $purple;
 }

@@ -205,5 +205,11 @@ ul li {
     padding-top: 40px; }
   #contact p {
     font-size: 1.4rem; }
+  #contact .uList {
+    padding-left: 0; }
+
+.btn-info, .btn-info:hover {
+  background: #9932CC;
+  border: #9932CC; }
 
 /*# sourceMappingURL=main.css.map */
