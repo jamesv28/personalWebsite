@@ -27,7 +27,7 @@ $(function() {
 
     //typing
     $('.typing').typed({
-        strings: ['Developer','Designer', 'all around cool dude'],
+        strings: [' Developer',' Designer', 'n all around cool dude'],
         typeSpeed: 10,
         showCursor: true,
         loop: true,
@@ -39,9 +39,12 @@ $(function() {
         animateIn: 'bounceInLeft',
         items:1,
         margin:30,
+        loop: true,
+        dots: true,
+        dotsEach: true,
+        autoplay: true,
         stagePadding:30,
-        smartSpeed:450,
-        nav: true
-
+        dotData: true,
+        smartSpeed:250
     });
 }); // end of jQuery script
