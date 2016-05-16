@@ -54,14 +54,15 @@ h2 {
 /******** header content *******/
 #indexHead {
   //background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("http://wallpoper.com/images/00/34/71/85/black-textures_00347185.jpg");
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/lexiJump.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/james2.png");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
-  background-position: center center;
+  height: 100vh;;
+  //background-position: 50% 30%;
   background-repeat: no-repeat;
   //background-attachment: fixed;
   position: relative;
@@ -115,6 +116,7 @@ nav a {
   position: relative;
   padding-right: 20px;
   color: purple;
+  text-shadow: .25px .25px  #ffffff;
   text-decoration: none;
 }
 
