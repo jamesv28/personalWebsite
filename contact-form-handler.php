@@ -2,9 +2,8 @@
 <html>
 
 <head lang="en">
-    <title>Sparrows Voice | Contact Confirmation </title>
-    <link rel="stylesheet" href="style/bootstrap.min.css">
-    <link rel="stylesheet" href="style/style.css">
+    <title>James Volmert | Contact Confirmation </title>
+    <link rel="stylesheet" href="style/main.css">
     <style>
         .container {
             margin: auto;
@@ -34,9 +33,9 @@
     if(isset($_POST['email'])) {
 
     // EDIT THE 2 LINES BELOW AS REQUIRED
-    $email_to = "sparrowsvoice11@gmail.com";
+    $email_to = "james.volmert@gmail.com";
 
-    $email_subject = "Contact From Interested Individual";
+    $email_subject = "Contact From Portfolio Site";
 
     function died($error) {
         // your error code can go here
@@ -53,9 +52,8 @@
     }
 
     // validation expected data exists
-    if(!isset($_POST['name']) ||
 
-        !isset($_POST['email']) ||
+        if(!isset($_POST['email']) ||
 
         !isset($_POST['message'])) {
 
@@ -63,7 +61,6 @@
 
     }
 
-    $name = $_POST['name']; // required
 
     $email_from = $_POST['email']; // required
 
@@ -81,11 +78,7 @@
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-    if(!preg_match($string_exp,$name)) {
 
-        $error_message .= 'The First Name you entered does not appear to be valid.<br />';
-
-    }
 
     if(strlen($message) < 2) {
 
@@ -108,7 +101,6 @@
 
     }
 
-    $email_message .= " Name: ".clean_string($name)."\n";
 
     $email_message .= "Email: ".clean_string($email_from)."\n";
 
