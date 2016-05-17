@@ -219,4 +219,9 @@ ul li {
   .footerLink:hover {
     color: #9932CC; }
 
+/****** FOOTE **********/
+footer {
+  background: #000;
+  color: #FFF5EE; }
+
 /*# sourceMappingURL=main.css.map */
