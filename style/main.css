@@ -188,7 +188,8 @@ ul li {
     opacity: 1; } }
 /****** owl carousel ********/
 .owl-carousel p {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  margin-top: 10%; }
 
 /******* Contact ********/
 #contact {
@@ -212,5 +213,10 @@ ul li {
 .btn-info, .btn-info:hover {
   background: #9932CC;
   border: #9932CC; }
+
+.footerLink {
+  color: #FFFFFF; }
+  .footerLink:hover {
+    color: #9932CC; }
 
 /*# sourceMappingURL=main.css.map */
