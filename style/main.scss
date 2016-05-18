@@ -46,6 +46,7 @@ h2 {
   font-size: 2.4rem;
 }
 
+
 .line {
   height: 4px;
   width:100%;
@@ -79,13 +80,21 @@ h2 {
   font-size: 3.2rem;
   color: $seashell;
   padding-top: 40px;
+}
 
+@media (max-width: 700px) {
+  #headContent h1 {
+    font-size: 1.6rem;
+  }
+  #headContent p {
+    font-size: 1.2rem;
+  }
 }
 
 #indexHead p {
-  color: $purple;
+  color: $seashell;
   font-size: 2.4rem;;
-  text-shadow: .5px .5px $seashell;
+  //text-shadow: .5px .5px $seashell;
 }
 
 
@@ -207,7 +216,7 @@ ul li {
 .typed-cursor{
   opacity: 1;
   //background: $seashell;
-  //width: 5px;;
+  width: 5px;;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
