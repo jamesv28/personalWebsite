@@ -88,7 +88,6 @@ nav a {
   position: relative;
   padding-right: 20px;
   color: purple;
-  text-shadow: .25px .25px  #ffffff;
   text-decoration: none; }
 
 nav a:hover .nav-label {
@@ -114,7 +113,7 @@ nav .nav-dot {
   transition: all 0.3s linear; }
 
 nav .nav-label {
-  color: #3d1451;
+  color: #9932CC;
   display: block;
   opacity: 0.5;
   visibility: hidden;
@@ -228,6 +227,9 @@ ul li {
 /******** portfolio *****/
 #portfolio {
   margin-bottom: 40px; }
+
+#portfolio h2 {
+  padding-bottom: 20px; }
 
 /****** footer **********/
 footer {

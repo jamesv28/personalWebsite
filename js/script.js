@@ -47,4 +47,17 @@ $(function() {
         dotData: true,
         smartSpeed:250
     });
+    //fancybox imges
+    $('#aspensoft').fancybox();
+    $('#prosfound').fancybox();
+    $('#tapt').fancybox();
+    
+    //fancybox settings
+    $("a.fancy").fancybox({
+        'transitionIn'	:	'elastic',
+        'transitionOut'	:	'elastic',
+        'speedIn'		:	600,
+        'speedOut'		:	200,
+        'overlayShow'	:	false
+    });
 }); // end of jQuery script
