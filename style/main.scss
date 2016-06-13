@@ -292,3 +292,24 @@ footer {
   background: #000;
   color: $seashell;
 }
+
+/********* modal *********/
+#btn-close-modal {
+  width:100%;
+  cursor:pointer;
+  //color:#fff;
+  border: 0;
+}
+
+.modal-content {
+  border:0;
+  box-shadow: none;
+}
+
+.featuredImage {
+  margin: 0 auto;
+  display: block;
+}
+#animatedModal {
+  background: #FFFFFF;
+}

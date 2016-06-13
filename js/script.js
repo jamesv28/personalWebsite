@@ -2,13 +2,6 @@
 $(function() {
     var wheight = $(window).height(); //get height of the window
 
-    // $('#indexHead').css('height', wheight);
-    //
-    // $(window).resize(function() {
-    //     var wheight = $(window).height(); //get height of the window
-    //     $('#indexHead').css('height', wheight);
-    // }); //on resize
-
     /* animated scrolling */
     var topoffset = 40;
     $('a[href*=#]:not([href=#])').click(function() {
@@ -24,7 +17,11 @@ $(function() {
         } //location hostname
     }); //on click
 
+    $('#slide01').animatedModal({
+        animatedIn: 'lightSpeedIn',
+        animatedOut:'bounceOutDown'
 
+    });
     //typing
     $('.typing').typed({
         strings: [' Developer',' Designer', 'n all around cool dude'],
@@ -47,17 +44,5 @@ $(function() {
         dotData: true,
         smartSpeed:250
     });
-    //fancybox imges
-    $('#aspensoft').fancybox();
-    $('#prosfound').fancybox();
-    $('#tapt').fancybox();
-    
-    //fancybox settings
-    $("a.fancy").fancybox({
-        'transitionIn'	:	'elastic',
-        'transitionOut'	:	'elastic',
-        'speedIn'		:	600,
-        'speedOut'		:	200,
-        'overlayShow'	:	false
-    });
+
 }); // end of jQuery script
