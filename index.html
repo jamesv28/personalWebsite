@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/owl.carousel.css">
-    <link rel="stylesheet" href="style/jquery.fancybox.css">
+    <!--<link rel="stylesheet" href="style/jquery.fancybox.css">-->
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
@@ -182,10 +182,11 @@
     <div class="container">
         <h2 class="text-center">Previous Work</h2>
             <div class="col-md-4 col-sm-4">
-                <a class="fancy" id="aspensoft" href="img/aspensoft2Big.png">
+                <a  id="slide01" href="#animatedModal">
                     <img style="height: 200px;" alt="aspensoft home page" src="img/aspensoft2small.png" class=" img-responsive ">
                 </a>
-        </div>
+            </div>
+
         <div class="col-md-4 col-sm-4  ">
             <a id="prosfound" href="img/prosfound2Big.png" title="Prosfound: a tax relief company, wanted to stylistically change their website. I included jQuery easing scrolling, along with animations throughout the page.">
                 <img  style="height: 200px;" src="img/prsfound%20copy.png" class="img-responsive">
@@ -198,6 +199,18 @@
         </div>
     </div>
 </section>
+<div id="animatedModal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID  class="close-animatedModal" -->
+    <div class="close-animatedModal" id="btn-close-modal">
+        <i class="fa fa-times fa-2x pull-right" aria-hidden="true"></i>
+    </div>
+
+    <div class="modal-content">
+        <!--Your modal content goes here-->
+        <h2 class="text-center">Aspensoft</h2>
+        <img src="img/aspensoft2Big.png" alt="image of home page of aspensoft" class="featuredImage">
+    </div>
+</div>
 <section class="row" id="contact">
     <div class="container-fluid">
         <div class="col-md-8 col-sm-8 col-md-offset-2 col-sm-offset-2">
@@ -251,7 +264,8 @@
 <script type="text/javascript" src="js/typed.min.js"></script>
 <script src="js/initializeWoW.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/owl.carousel.js"></script>
-<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<!--<script type="text/javascript" src="js/jquery.fancybox.js"></script>-->
+<script type="text/javascript" src="js/animatedModal.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
