@@ -1,256 +1,66 @@
-/******* Web fonts ******/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-@import url(https://fonts.googleapis.com/css?family=Raleway);
-/****** montserrat alternate *******/
-/******* General *******/
-html {
-  font-size: 100%; }
-
-nav ul {
-  list-style-type: none; }
-
-a:hover {
-  text-decoration: none; }
-
-* {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
 
 html, body {
-  font-family: 'Raleway', sans-serif; }
+  font-size: 100%; 
+  font-family: 'Montserrat', sans-serif;
+  color: #404040;
+  background-color: #FAFAFA;
+}
+h1, h2, h3, h4, h5, h6, strong{
+  color: #138f6aff;
+}
 
 h1 {
   font-size: 3.2rem;
-  font-family: 'Montserrat', sans-serif; }
-
+}
 h2 {
   font-size: 2.4rem; }
 
-.line {
-  height: 4px;
-  width: 100%;
-  background: gray;
-  margin-bottom: 40px; }
+  .margins {
+    margin: 40px 0 40px 0;
+  }
 
-/******** header content *******/
-#indexHead {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/james2.png");
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  height: 100vh;
-  background-repeat: no-repeat;
-  position: relative;
-  z-index: -1;
-  padding: 0; }
-  #indexHead h3 {
-    color: #FFF5EE; }
+  .marginsBottom {
+    margin-bottom: 40px;
+  }
 
-#headContent h1 {
-  font-size: 3.2rem;
-  color: #FFF5EE;
-  padding-top: 40px; }
+  .lexi {
+    height: 400px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('../img/james2.png');
+  }
 
-@media (max-width: 700px) {
-  #headContent h1 {
-    font-size: 1.6rem; }
+/** new stuff */
+.headerSvg {
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
 
-  #headContent p {
-    font-size: 1.2rem; } }
-#indexHead p {
-  color: #FFF5EE;
-  font-size: 2.4rem; }
+.darkGray {
+  background-color: #848484;
+  color: white;
+}
 
-.section-content {
-  padding: 40px 0 40px; }
-  .section-content p {
-    color: #4d4d4d;
-    font-size: 1.2rem; }
-
-/******** navigation ***********/
-nav {
-  position: fixed;
-  right: 0;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: right;
-  z-index: 3; }
-
-nav a {
-  display: block;
-  line-height: 25px;
-  position: relative;
-  padding-right: 20px;
-  color: purple;
-  text-decoration: none; }
-
-nav a:hover .nav-label {
-  -webkit-transform: translateX(-20);
-  -ms-transform: translateX(-20);
-  transform: translateX(-20);
-  opacity: 1;
-  visibility: visible; }
-
-nav .nav-dot {
-  display: block;
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  background-color: #d6d6d6;
-  border-radius: 100%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear; }
-
-nav .nav-label {
-  color: #9932CC;
-  display: block;
-  opacity: 0.5;
-  visibility: hidden;
-  -webkit-transform: translateX(-10px);
-  -ms-transform: translateX(-10px);
-  transform: translateX(-10px);
-  -webkit-transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
-  transition: all 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67); }
-
-/******** process *********/
-.process {
-  padding: 40px 0 40px;
-  background: linear-gradient(to bottom, rgba(66, 66, 111, 0.9), rgba(66, 66, 111, 0.9)), url("https://assets.entrepreneur.com/content/16x9/822/20141230193127-work.jpeg") #2f2f4f;
-  color: #FFF5EE;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 400px;
-  background-attachment: fixed; }
-
-#beginP::first-letter {
-  font-size: 1.8rem; }
-
-.howSection {
-  padding-bottom: 40px; }
-
-.second {
-  padding-bottom: 40px; }
-
-/******** icons *******/
-.fa-flask {
-  color: #FFF5EE; }
+.paddings {
+  padding: 40px;
+}
 
 .icons {
-  color: #9932CC; }
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
 
-.webIcon {
-  color: #9932CC; }
+.sidePic {
+  height: 250px;
+}
 
-ul li {
-  list-style-type: none; }
-
-/*********end of icons ******/
-/********typing *********/
-.typed-cursor {
-  opacity: 1;
-  width: 5px;
-  -webkit-animation: blink 0.7s infinite;
-  -moz-animation: blink 0.7s infinite;
-  animation: blink 0.7s infinite; }
-
-@keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-webkit-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-@-moz-keyframes blink {
-  0% {
-    opacity: 1; }
-  50% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-/****** owl carousel ********/
-.owl-carousel p {
-  font-size: 1.4rem;
-  margin-top: 10%; }
-
-/******* Contact ********/
-#contact {
-  color: #FFF5EE;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("http://www.insidesources.com/wp-content/uploads/2014/04/bigstock-Old-Mailboxes-in-west-United-S-41342812-1.jpg");
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat; }
-  #contact h2 {
-    padding-top: 40px; }
-  #contact p {
-    font-size: 1.4rem; }
-  #contact .uList {
-    padding-left: 0; }
-
-.btn-info, .btn-info:hover {
-  background: #9932CC;
-  border: #9932CC; }
-
-.footerLink {
-  color: #FFFFFF; }
-  .footerLink:hover {
-    color: #9932CC; }
-
-/******** portfolio *****/
-#portfolio {
-  margin-bottom: 40px; }
-
-#portfolio h2 {
-  padding-bottom: 20px; }
-
-/****** footer **********/
-footer {
-  background: #000;
-  color: #FFF5EE; }
-
-/********* modal *********/
-#btn-close-modal {
-  width: 100%;
-  cursor: pointer;
-  border: 0; }
-
-.modal-content {
-  border: 0;
-  box-shadow: none; }
-
-.featuredImage {
-  margin: 0 auto;
-  display: block; }
-
-#animatedModal {
-  background: #FFFFFF; }
-
-/*# sourceMappingURL=main.css.map */
+.footerSect {
+  background-color: #138f6aff;
+  color: white;
+}
