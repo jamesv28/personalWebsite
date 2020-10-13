@@ -11,34 +11,37 @@
     <!-- stylesheets -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/master/devicon.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style/animate.css">
     <link rel="stylesheet" href="style/main.css">
 </head>
 <body>
 
-<section class="">
-    <!-- include navigation inside of here -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <a class="navbar-brand" href="#">James Volmert</a>
-        <button 
-            class="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarNavAltMarkup" 
-            aria-controls="navbarNavAltMarkup" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation"
-            >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a class="nav-item nav-link" href="#" onClick="$('#theStack').animatescroll({scrollSpeed:4000,easing:'easeOutElastic'})">The Stack <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#" onclick="$('#work').animatescroll({scrollSpeed: 5500, easing: 'easeOutBounce'})">Work</a>
-          </div>
-        </div>
-      </nav>
-    <img alt="" src="./img/headerWebsite.svg" class="headerSvg"/>
+<section class="container-fluid noPad">
+        <div class="row" style="margin: 0; padding: 0;">
+            <nav class="navbar navbar-expand-lg navbar-light ">
+                <a class="navbar-brand" href="#">James Volmert</a>
+                <button 
+                    class="navbar-toggler" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#navbarNavAltMarkup" 
+                    aria-controls="navbarNavAltMarkup" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation"
+                    >
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#" onClick="$('#work').animatescroll({scrollSpeed: 4500, easing: 'easeOutBounce'})">Work</a>
+                    <a class="nav-item nav-link" href="#" onClick="$('#theStack').animatescroll({scrollSpeed:5500,easing:'easeOutElastic'})">Technologies </a>
+                    <a class="nav-item nav-link" href="#" onClick="$('#contact').animatescroll({scrollSpeed: 5500, easing: 'easeOutBack'})">Contact</a>
+                </div>
+                </div>
+            </nav>
+            <img alt="" src="./img/headerWebsite.svg" class="headerSvg noPad"/>
+    </div>
 </section>
 
 <main>
@@ -56,75 +59,6 @@
     <section class="row lexi" style="margin-top: 20px;">
     </section>
 
-    <!-- section talking about the stack that i work with -->
-    <section class="marginsBottom" id="theStack">
-        <div class="margins row">
-            <div class="container-fluid">
-                <div class="col-md-4 col-sm-6 offset-md-4 offset-sm-3">
-                    <h1 class="text-center">The Stack.</h1>
-                    <p class="text-center">
-                        If you're working on a project, and need help with anything in my wheelhouse. Give me a <strong>shout</strong> out.
-                    </p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-                <div class="col-md-4  col-sm-8 offset-sm-2 wow slideInLeft">
-                    <h2 class="text-center"><i class="devicon-html5-plain webIcon"></i></h2>
-                    <p>The building block of the web. <strong>HTML5</strong> provides the structure for the web.  Without it,
-                    we are nothing. Advances in HTML5 allow a richer user experience. Can also be used automatically for assisting people with visual disability.</p>  
-                </div>
-                <div class="col-md-4 offset-md-1 col-sm-10 offset-sm-1 wow slideInRight">
-                    <h2 class="text-center">
-                        <i class="webIcon devicon-css3-plain"></i>
-                        <i class="devicon-sass-original webIcon"></i>
-                        <i class="devicon-less-plain-wordmark webIcon"></i>
-                        <i class="webIcon devicon-bootstrap-plain"></i>
-                        <i class="devicon-foundation-plain webIcon"></i>
-                    </h2>
-                        <p><strong>CSS</strong> is the magic of the web.  Can create anything from a simple animation to
-                        creating a vertical and horizontal gird.  Bootstrap provides a webkit that is terrific for
-                        creating grids and styling any project.</p>
-                </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 offset-md-2 col-sm-10 offset-sm-1 wow fadeInUp">
-                <h2 class="text-center">
-                    <i class="webIcon devicon-javascript-plain"></i>
-                    <i class="devicon-angularjs-plain webIcon"></i>
-                    <i class="devicon-jquery-plain webIcon"></i>
-                </h2>
-                <p><strong>javaScript:</strong> the language of awesome. Adding interactivity, form-validation, and providing
-                a way for MVC to breathe on the web. Angular and jQuery are go-to libraries.</p>
-            </div>
-            <div class="col-md-4 col-sm-10 offset-sm-1 wow fadeInUp">
-                <h2 class="text-center">
-                    <i class="devicon-nodejs-plain webIcon"></i>
-                    <i class="devicon-php-plain webIcon"></i>
-                </h2>
-                <p> <strong>Back-end:</strong> Crating a way for the database to connect to front-end. Without this
-                step we couldn't generate dynamic content. Back-end technologies I use are node.js and php</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 offset-md-2 col-sm-10 offset-sm-1 wow bounceInLeft">
-                <h2 class="text-center">
-                    <i class="devicon-postgresql-plain webIcon"></i>
-                    <i class="devicon-mongodb-plain webIcon"></i>
-                    <i class="devicon-mysql-plain webIcon"></i>
-                </h2>
-                <p><strong>Databases: </strong> Where data lives. Many aspects go into creating and maintaining a database.
-                  Configuration, scalability, and normalization are only a few. I love the data and manipulating it </p>
-            </div>
-            <div class="col-md-4 col-sm-10 offset-sm-1 wow bounceInRight">
-                <h2 class="text-center">
-                    <i class="devicon-wordpress-plain webIcon"></i>
-                </h2>
-                <p><strong>Wordpress: </strong>the leading open-source CMS. A very powerful tool to have in the toolbelt for
-                scaling sites with ease-of-use. </p>
-            </div>
-        </div>
-    </section>  <!-- end of section with stack -->
     <!-- work experience -->
     <section class="work" id="work">
         <div class="row margins">
@@ -141,16 +75,16 @@
                 </div>
                 <div class="col-md-6 col-sm-12 paddings">
                     <h3 class="text-center">Mobile Development.</h3>
-                    <p>At DaVita, I worked on the client facing app, Patient Engagement.  In essence, the app was a telemed app where doctors could connect with patients on a variety of topics including lab results and discussing medications.</p>
+                    <p>At DaVita, I worked on the client facing app, <strong>Patient Engagement</strong>.  In essence, the app was a telemed app where doctors could connect with patients on a variety of topics including lab results and discussing medications.</p>
                 </div>
         </div>
         <div class="row">
             <div class="col-md-6 col-sm-12 paddings">
                 <h3 class="text-center">Front-End Developer.</h3>
-                <p>At various startups and a few Fortune 500 companies, I have worked on the client facing code. I have dealt with everything ranging from re-implementing surveys all the way to creating new apps at the very beginning. </p>
+                <p>At various startups and a few Fortune 500 companies, I have worked on client facing code. I have dealt with everything ranging from re-implementing surveys all the way to creating new apps at the very beginning of <strong>inception</strong>. </p>
             </div>
             <div class="col-md-6 col-sm-12 paddings">
-                <img src="./img/code.jpg" alt="" class="sidePic"/>
+                <img src="./img/code.jpg" alt="" class="sidePic" style="width: 100%;"/>
             </div>
         </div>
         <div class="row">
@@ -159,20 +93,110 @@
             </div>
             <div class="col-md-6 col-sm-12 paddings">
                 <h3 class="text-center">Web Designer.</h3>
-                <p>Designing anything ranging from setting up simple contact forms to fully functional and integrated Wordpress sites.</p>
+                <p><strong>Designing</strong> anything ranging from setting up simple contact forms to fully functional and integrated Wordpress sites.</p>
             </div>
         </div>
     </section>
+    <!-- section talking about the stack that i work with -->
+    <section class="marginsBottom" id="theStack">
+        <div class="margins row">
+            <div class="container-fluid">
+                <div class="col-md-4 col-sm-6 offset-md-4 offset-sm-3">
+                    <h1 class="text-center">Technologies.</h1>
+                    <p class="text-center">
+                        If you're working on a project, and need help with anything in my wheelhouse. Give me a <strong>shout</strong> out.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 col-sm-12 wow slideInLeft"">
+                    <h2 class="text-center">
+                        <i class="devicon-html5-plain webIcon" aria-hidden="true"></i>
+                    </h2>
+                    <p>The building block of the web. <strong>HTML5</strong> provides the structure for the web.  Without it,
+                    we are nothing. Advances in HTML5 allow a richer user experience. Can also be used automatically for assisting people with visual disability.</p>  
+                </div>
+                <div class="col-md-5 col-sm-12 wow slideInRight">
+                    <h2 class="text-center">
+                        <i class="webIcon devicon-css3-plain" aria-hidden="true"></i>
+                        <i class="devicon-sass-original webIcon" aria-hidden="true"></i>
+                        <i class="devicon-less-plain-wordmark webIcon" aria-hidden="true"></i>
+                        <i class="webIcon devicon-bootstrap-plain" aria-hidden="true"></i>
+                        <i class="devicon-foundation-plain webIcon" aria-hidden="true"></i>
+                    </h2>
+                    <p><strong>CSS</strong> is the magic of the web.  Can create anything from a simple animation to
+                    creating a vertical and horizontal gird.  Bootstrap provides a webkit that is terrific for
+                    creating grids and styling any project.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 col-sm-12 offset-sm-1 wow fadeInUp">
+                    <h2 class="text-center">
+                        <i class="webIcon devicon-javascript-plain" aria-hidden="true"></i>
+                        <i class="devicon-react-original" aria-hidden="true"></i>
+                        <i class="devicon-angularjs-plain webIcon" aria-hidden="true"></i>
+                        <i class="devicon-jquery-plain webIcon" aria-hidden="true"></i>
+                    </h2>
+                    <p><strong>javaScript:</strong> the language of awesome. Adding interactivity, form-validation, and providing
+                    a way for MVC to breathe on the web. Angular and jQuery are go-to libraries.</p>
+                </div>
+                <div class="col-md-5 col-sm-12  wow fadeInUp">
+                    <h2 class="text-center">
+                        <i class="devicon-nodejs-plain webIcon" aria-hidden="true"></i>
+                        <i class="devicon-php-plain webIcon" aria-hidden="true"></i>
+                    </h2>
+                    <p> <strong>Back-end:</strong> Crating a way for the database to connect to front-end. Without this
+                    step we couldn't generate dynamic content. Back-end technologies I use are node.js and php</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 offset-md-1 col-sm-12 wow bounceInLeft">
+                    <h2 class="text-center">
+                        <i class="devicon-postgresql-plain webIcon" aria-hidden="true"></i>
+                        <i class="devicon-mongodb-plain webIcon" aria-hidden="true"></i>
+                        <i class="devicon-mysql-plain webIcon" aria-hidden="true"></i>
+                    </h2>
+                    <p><strong>Databases: </strong> Where data lives. Many aspects go into creating and maintaining a database.
+                    Configuration, scalability, and normalization are only a few. I love the data and manipulating it </p>
+                </div>
+                <div class="col-md-5 col-sm-12 wow bounceInRight">
+                    <h2 class="text-center">
+                        <i class="devicon-wordpress-plain webIcon" aria-hidden="true"></i>
+                    </h2>
+                    <p><strong>Wordpress: </strong>the leading open-source CMS. A very powerful tool to have in the toolbelt for
+                    scaling sites with ease-of-use. </p>
+                </div>
+            </div>
+        </div>
+    </section>  <!-- end of section with stack -->
 </main>
-<footer class="row paddings footerSect">
+<footer class="row paddings footerSect" id="contact">
     <div class="container-fluid">
         <div class="col-md-6 offset-md-3 col-sm-8 offset-sm-2">
             <h2 class="text-center wow flip" style="color: white;">
-                Contact
+                Let's Touch Base.
             </h2>
-            <div>
-                <button class="btn btn-link" type="button">
-                    <i class="fas fa-envelope-square" aria-label="Email"></i>
+            <div class="paddings text-center">
+                <button class="btn btn-link contactIcons" type="button" data-toggle="tooltip" data-placement="bottom" title="Email">
+                    <a href="mailto:james.volmert@gmail.com">
+                        <i class="fa fa-envelope-o fa-4x" aria-label="email"></i>
+                    </a>     
+                </button>
+                <button class="btn btn-link contactIcons" type="button" data-toggle="tooltip" data-placement="bottom" title="View Resume">
+                    <a target="_blank" href="./jvolmert-Resume.pdf">
+                        <i class="fa fa-file-o fa-4x" aria-label="Resume"></i>
+                    </a>     
+                </button>
+                <button class="btn btn-link contactIcons" type="button" data-toggle="tooltip" data-placement="bottom" title="Linkedin Page">
+                    <a href="https://www.linkedin.com/in/james-volmert-15301954/" target="_blank">
+                        <i class="fa fa-linkedin-square fa-4x" aria-label="Linkedin Profile"></i>
+                    </a>
                 </button>
             </div>
         </div>

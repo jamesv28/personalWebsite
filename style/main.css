@@ -71,7 +71,7 @@ p {
 }
 
 .footerSect {
-  background-color: #138f6aff;
+  background-color: #00B2EE;
   color: white;
 }
 
@@ -79,4 +79,13 @@ p {
   background-color: #c1c1c191;
   border: 0;
   margin-bottom: 0;
+  width: 100%;
+}
+
+.noPad {
+  padding: 0;
+}
+
+.contactIcons i{
+  color: white;
 }
